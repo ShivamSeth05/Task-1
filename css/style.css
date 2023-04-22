@@ -6,17 +6,13 @@
 }
 
 
-/* Use a media query to add a break point at 800px: */
 @media screen and (max-width: 800px) {
 
   .header-left,
   .header-right .search-bar {
     width: 100%;
-    /* The width is 100%, when the viewport is 800px or smaller */
   }
 }
-
-
 
 
 .search-bar {
@@ -42,7 +38,7 @@ a {
 }
 
 .header-left {
- 
+
   display: flex;
   justify-content: center;
   text-align: center;
@@ -92,8 +88,8 @@ a {
   opacity: 0;
   visibility: hidden;
   position: absolute;
-  right: 10px;
-  top: 108px;
+  right: 8.5%;
+  top: 100px;
   transform: translate(0, 10px);
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
   border: 1px solid white;
@@ -119,6 +115,15 @@ a {
 
 }
 
+.popover__content:hover {
+  z-index: 10;
+  opacity: 1;
+  visibility: visible;
+  transform: translate(0, -20px);
+  transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+
+}
+
 .header-right-img {
   border: 1px solid black;
   border-radius: 50%;
@@ -133,21 +138,21 @@ a {
   margin: 0;
   padding: 0;
   border-radius: 57%;
-  width: 14px;
-  height: 15px;
+  width: 15px;
+  height: 14px;
   position: absolute;
-  right: 88px;
-  top: 39px;
+  right: 84px;
+  top: 42px;
   text-align: left;
   font: normal normal normal 12px/15px Mulish;
 }
 
 .header-right-imgs {
   position: relative;
-  left: 10px;
+  left: 13px;
   width: 20px;
   height: 20px;
-  margin-top: 16px;
+  margin-top: 17px;
 
 }
 
@@ -192,19 +197,20 @@ a {
   padding: 0% 70px;
 }
 
-.first-Half p{
+.first-Half p {
   margin-top: 50;
   padding: 50px 0px 0px 0px;
   font: normal normal normal 26px/36px Bath Sans;
   letter-spacing: 0px;
   color: #36403A;
   opacity: 1;
- 
- }
+
+}
+
 .categoery {
   display: flex;
   padding-left: 0px;
-  margin: 0 0 16px 0; 
+  margin: 0 0 16px 0;
   padding: 0;
 }
 
@@ -230,9 +236,8 @@ a {
 }
 
 .Second-Half {
-  display: flex;
-  margin-left: 0;
-  /* padding: 20px; */
+  /* justify-content: center; */
+  padding: 9px;
 }
 
 .card-body {
@@ -256,6 +261,8 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  top: 27%;
 
 }
 
@@ -265,6 +272,7 @@ a {
   width: 95px;
   height: 37px;
   border: 1px solid #0B3855;
+  font-family: revert;
   border-radius: 30px;
   opacity: 1;
   text-align: center;
@@ -283,8 +291,127 @@ a {
   margin-right: auto;
 }
 
-#each-card {
-  width: 336px;
+/* 
+.each-card {
+  width: 344px;
   height: 371px;
   padding: 0;
+} */
+
+.card-t {
+  font: normal normal bold 18px/23px Mulish;
+  letter-spacing: 0px;
+  color: #36403A;
+  opacity: 1;
+
+}
+
+@media screen and (max-width: 1496px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 297px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 868px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 347px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1012px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 276px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1215px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 256px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1381px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 297px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1496px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 332px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1668px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 298px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1890px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 340px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 2026px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 303px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 2078px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 294px;
+    height: 371px;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 3038px) {
+
+  #each-card {
+    /* background-color: #125778; */
+    width: 280px;
+    height: 371px;
+    padding: 0;
+  }
 }
